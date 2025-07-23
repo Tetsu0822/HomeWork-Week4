@@ -132,6 +132,9 @@
 }
 
 .justify {
+    &-start {
+        justify-content: flex-start;
+    }
     &-between {
         justify-content: space-between;
     }
@@ -178,6 +181,9 @@
 }
 
 @media (max-width: 767px) {
+    .flex-md-column {
+        flex-direction: column;
+    }
     .d-md {
         &-block {
             display: block;
@@ -340,8 +346,13 @@
     }
 }
 
-.bg-neutral-100 {
-    background-color: $neutral-100;
+.bg-neutral {
+    &-100 {
+        background-color: $neutral-100;
+    }
+    &-300 {
+        background-color: $neutral-300;
+    }
 }
     
 .p {
