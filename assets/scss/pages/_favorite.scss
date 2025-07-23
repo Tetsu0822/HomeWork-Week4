@@ -1,0 +1,19 @@
+.opening-quote {
+    vertical-align: center;
+    padding: 16px;
+}
+
+.favorite-icon {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: $primary-300;
+    .bi {
+        padding: 5.62px 4.5px;
+        
+    }
+}
+
+.favorite-picture {
+    width: 120px;
+    height: 120px;
+}

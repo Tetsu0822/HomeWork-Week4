@@ -1,0 +1,226 @@
+/* Index Page */
+@media (max-width: 767px) {
+  .mobile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    li {
+      flex: 0 0 50%;
+      list-style: none;
+      text-align: center;
+      background-color: $primary-100;
+      &.active {
+          background-color: $primary-200;
+      }
+      a {
+          display: block;
+          padding: 12px 24px;
+          text-align: center;
+          &:hover {
+            color: $primary-500;
+            background-color: $primary-200;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+    position: absolute;
+    top: 288.5px;
+    left: 200px;
+    &-section {
+      position: relative;
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 400px 0;
+  }
+}
+
+@media (max-width: 767px) {
+    .fs-md-48 {
+        font-size: 48px;
+    }
+    .hero {
+        top: 155px;
+        left: 24px;
+        &-section {
+          background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true');
+          padding: 240px 0;
+      }
+    }
+}
+
+.hot {
+  &-item {
+      position: relative;
+  }
+  &-tag {
+      position: absolute;
+      font-size: 14px;
+      color: var(--primary-400);
+      background-color: var(--primary-100);
+      padding: 8px 12px;
+      top: 0;
+      left: 0;
+  }
+}
+
+.banner {
+  &-section {
+      position: relative;
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      margin: 48px 0;
+      text-align: center;
+      vertical-align: middle;
+      overflow: hidden;
+      h2 {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+  }
+  &-title {
+      display: block;
+      position: relative;
+      
+  }
+  &-bar {
+      position: absolute;
+      left: calc(50% - 52px);
+      bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+    .banner {
+      &-section {
+          background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true');
+      }
+      &-title {
+          display: flex;
+          flex-direction: column;
+      }
+    }
+}
+
+.star {
+    position: absolute;
+    left: -80px;
+    top: -32px;
+
+}
+
+@media (max-width: 767px) {
+    .star {
+        left: -116px;
+    }
+}
+
+.series {
+  &-item {
+      position: relative;
+      &:hover .main-title {
+        color: $primary-300;
+    }
+  }
+  &-tag {
+      position: absolute;
+      font-size: 14px;
+      color: $neutral-0;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 117.5px 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+}
+
+.slogon {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--neutral-500);
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .slogon {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .series-tag {
+        padding: 62px 0;
+    }
+}
+
+.sparkle {
+    position: absolute;
+    top: 174px;
+    right: -64px;
+}
+
+@media (max-width: 767px) {
+    .sparkle {
+        top: 260px;
+        right: -130px;
+    }
+}
+
+/* 穿搭圖片 */
+.idea {
+  &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -4px;
+      margin-left: -4px;
+  }
+  &-col-4 {
+      width: calc(100% / 12 * 4);
+      padding-right: 4px;
+      padding-left: 4px;
+  }
+  &-col-6 {
+      width: calc(100% / 12 * 6);
+      padding-right: 4px;
+      padding-left: 4px;
+  }
+  &-col-12 {
+      width: 100%;
+      padding-right: 4px;
+      padding-left: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .idea-row {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        scroll-snap-align: start;
+    }
+  }
+
+  .idea-col-4,
+  .idea-col-6,
+  .idea-col-12 {
+      flex: 0 0 auto;
+      width: auto;
+  }
+}
